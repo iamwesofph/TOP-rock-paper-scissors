@@ -8,9 +8,13 @@
 </head>
 <body>
     <h1>Man vs Computer</h1>
-    <button id="btn-rock" value="0">Rock</button>
-    <button id="btn-scissors" value="1">Scissors</button>
-    <button id="btn-paper" value="2">Paper</button>
+    <h2>First to score 5 points wins the game</h2>
+    <p id="player-score">0</p>
+    <p id="computer-score">0</p>
+    <button id="btn-rock" onclick="playRound(0)" value="0">Rock</button>
+    <button id="btn-scissors" onclick="playRound(1)" value="1">Scissors</button>
+    <button id="btn-paper" onclick="playRound(2)" value="2">Paper</button>
+    <p id="round-result"></p>
     <script src="script.js"></script>
 </body>
 </html>
