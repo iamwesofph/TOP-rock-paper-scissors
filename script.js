@@ -70,3 +70,10 @@ function playRound(playerSelection) {
             break;
     }
 }
+
+const buttonRock = document.querySelector('#btn-rock');
+const buttonScissors = document.querySelector('#btn-scissors');
+const buttonPaper = document.querySelector('#btn-paper');
+buttonRock.addEventListener('click', () => {playRound(0); });
+buttonScissors.addEventListener('click', () => {playRound(1); });
+buttonPaper.addEventListener('click', () => {playRound(2); });
